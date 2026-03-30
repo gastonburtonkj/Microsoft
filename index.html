@@ -141,8 +141,8 @@ color: #0067B8;
 <head>
 <style>
 .top-banner {
-background-color: #f9f9f9;
-padding: 10px 0;
+padding: 20px 0;
+text-align: center;
 }
 
 .service-logos {
@@ -157,14 +157,14 @@ flex-wrap: wrap;
 height: 50px;
 width: auto;
 object-fit: contain;
-transition: transform 0.2s;
+transition: transform 0.2s, filter 0.2s;
+filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5)); /* makes logos visible on white */
 }
 
 .service-logos img:hover {
 transform: scale(1.1);
+filter: drop-shadow(4px 4px 8px rgba(0,0,0,0.7));
 }
-</style>
-</head>
   
 <!-- Microsoft Logo -->
 <div class="logo">Microsoft</div>
